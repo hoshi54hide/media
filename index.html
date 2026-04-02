@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI入門メディア - はじめてのAIをわかりやすく</title>
+    <meta name="description" content="AI初心者向けに、ChatGPTや画像生成AIの使い方をわかりやすく解説するメディアサイトです。">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-site-url.com/">
+    <meta property="og:title" content="AI入門メディア - はじめてのAIをわかりやすく">
+    <meta property="og:description" content="AI初心者向けに、ChatGPTや画像生成AIの使い方をわかりやすく解説するメディアサイトです。">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <span>✨</span> AI入門メディア
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="#chat">チャットAI</a></li>
+                    <li><a href="#image">画像生成</a></li>
+                    <li><a href="#guide">入門ガイド</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>AIで、未来をもっと身近に。</h1>
+                <p>初心者の方でも迷わず始められる、AIツールの活用術を平易な言葉でお届けします。</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-bar" placeholder="キーワードで記事を検索...">
+            </div>
+
+            <div class="article-grid" id="articleGrid">
+                <!-- 記事カードがここに動的に追加される、または静的に記述 -->
+                <article class="card" data-category="chat">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800" alt="ChatGPTの使い方" class="card-img">
+                    <div class="card-content">
+                        <span class="category-tag">チャットAI</span>
+                        <h2 class="card-title"><a href="articles/chatgpt-basic.html">【保存版】ChatGPTの始め方と基本の使い方ガイド</a></h2>
+                        <p class="card-excerpt">話題のChatGPTって何？という初心者の方向けに、登録方法から基本の質問のコツまで、画像付きでわかりやすく解説します。</p>
+                    </div>
+                </article>
+
+                <article class="card" data-category="image">
+                    <img src="https://images.unsplash.com/photo-1675557009875-436f599218a1?auto=format&fit=crop&q=80&w=800" alt="画像生成AI" class="card-img">
+                    <div class="card-content">
+                        <span class="category-tag">画像生成</span>
+                        <h2 class="card-title"><a href="articles/midjourney-guide.html">Midjourneyでプロみたいな絵を描く方法</a></h2>
+                        <p class="card-excerpt">誰でも簡単に高品質な画像が作れるMidjourney。基本的な呪文（プロンプト）の書き方を紹介します。</p>
+                    </div>
+                </article>
+
+                <article class="card" data-category="legal">
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800" alt="アフィリエイトについて" class="card-img">
+                    <div class="card-content">
+                        <span class="category-tag">重要</span>
+                        <h2 class="card-title"><a href="affiliate.html">当サイトのアフィリエイト活動について</a></h2>
+                        <p class="card-excerpt">当サイトで紹介しているサービスへのリンクには、アフィリエイトプログラムが含まれている場合があります。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo"><span>✨</span> AI入門メディア</div>
+                <div class="footer-links">
+                    <a href="affiliate.html">アフィリエイトについて</a>
+                    <a href="#">お問い合わせ</a>
+                    <a href="#">プライバシーポリシー</a>
+                </div>
+            </div>
+            <p class="text-center mt-2" style="font-size: 0.8rem; color: var(--text-muted);">
+                &copy; 2026 AI入門メディア. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
