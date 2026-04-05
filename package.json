@@ -1,0 +1,11 @@
+{
+  "name": "ai-media",
+  "version": "1.0.0",
+  "description": "AI Introduction Media Site",
+  "scripts": {
+    "start": "python -m http.server 8000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

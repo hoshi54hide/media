@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【初心者向け】AIを使いこなす「魔法の言葉」プロンプトの基本 - AI入門メディア</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <style>
+        .article-container { max-width: 800px; margin: 4rem auto; }
+        .article-header { margin-bottom: 2rem; }
+        .article-meta { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem; }
+        .disclosure-note {
+            background: #fff9db;
+            border-left: 4px solid #fcc419;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            font-size: 0.85rem;
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+        @media (prefers-color-scheme: dark) {
+            .disclosure-note {
+                background: #343a40;
+                border-left-color: var(--primary);
+                color: #e9ecef;
+            }
+        }
+        .article-content img { width: 100%; border-radius: 1rem; margin: 2rem 0; }
+        .article-content h2 { margin-top: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--primary); display: inline-block; padding-bottom: 0.5rem; }
+        .article-content p { margin-bottom: 1.5rem; }
+        .article-content ul { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+        .article-content li { margin-bottom: 0.5rem; }
+        .template-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+        }
+        .template-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+        .template-tag { font-size: 0.7rem; background: var(--primary); color: white; padding: 0.2rem 0.5rem; border-radius: 0.25rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">
+                    <span>✨</span> AI入門メディア
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="article-container">
+            <div class="article-header">
+                <span class="category-tag">入門ガイド</span>
+                <h1>【初心者向け】AIを使いこなす「魔法の言葉」プロンプトの基本</h1>
+                <div class="article-meta">2026/04/02 | 運営者 編集部</div>
+            </div>
+
+            <div class="article-content">
+                <img src="../assets/prompt_thumb.png" alt="プロンプトエンジニアリング">
+                
+                <p>「AIを使ってみたけど、思ったような回答が返ってこない…」そんな経験はありませんか？実は、AIに送る「指示（プロンプト）」的の書き方次第で、AIの出す回答の質は劇的に変わります。今回は、今日から使えるプロンプトエンジニアリングの基本テクニックを、10個のコピペ用テンプレート付きで解説します。</p>
+
+                <h2>1. 「役割」を明確に与える</h2>
+                <p>AIに向かって「あなたは今からプロ的のライター（または秘書、先生、有名人）です」と宣言してみてください。役割を具体化することで、AIはその目的に沿った口調や知識を選んで回答してくれるようになります。</p>
+
+                <h2>2. 「背景と目的」をセットにする</h2>
+                <p>「記事を書いて」とだけ頼むのではなく、「30代の会社員向けに、週末の趣味を探すためのブログ記事を、親しみやすいトーンで300文字程度で書いて」と具体的に伝えてみましょう。「誰が、何のために」が必要かを教えるのがコツです。</p>
+
+                <h2>3. 「出力の形式」を指定する</h2>
+                <p>「箇条書きでまとめて」「表にして」「ステップバイステップで説明して」と出力の形を指定することで、読みやすく整理された結果を返してくれます。</p>
+
+                <h2>今すぐ使える！10秒コピペ・テンプレート</h2>
+
+                <div class="template-card">
+                    <div class="template-header">
+                        <span class="template-tag">ビジネス</span>
+                        <strong>丁寧なメールの作成</strong>
+                    </div>
+                    <p style="font-style: italic; color: var(--text-muted);">
+                        あなたは秘書です。[宛先] への [件名] に関する謝罪メールを書いてください。状況は [状況] です。ビジネス敬語で、誠実な印象になるように。
+                    </p>
+                </div>
+
+                <div class="template-card">
+                    <div class="template-header">
+                        <span class="template-tag">日常</span>
+                        <strong>冷蔵庫の余り物でレシピ</strong>
+                    </div>
+                    <p style="font-style: italic; color: var(--text-muted);">
+                        あなたはプロの料理研究家です。[食材1] と [食材2] を使って、15分で作れる簡単な夕食のレシピを提案してください。調理手順も詳しく。
+                    </p>
+                </div>
+
+                <div class="template-card">
+                    <div class="template-header">
+                        <span class="template-tag">学習</span>
+                        <strong>難しいことを中学生にも分かるように</strong>
+                    </div>
+                    <p style="font-style: italic; color: var(--text-muted);">
+                        [キーワード/概念] について、中学生でも理解できるように分かりやすく説明してください。たとえ話を使ってください。
+                    </p>
+                </div>
+
+                <h2>最後に</h2>
+                <p>プロンプトエンジニアリングは「魔法」ではなく「コミュニケーション」です。人間同士で会話するように、丁寧に意図を伝えることが、AIを強力な相棒にするための第一歩です。</p>
+
+                <div class="text-center mt-2">
+                    <a href="../index.html" class="logo" style="display:inline-block; background:var(--primary); color:white; padding: 1rem 2rem; border-radius:3rem;">ホームページに戻る</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 AI入門メディア. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
