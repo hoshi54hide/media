@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI入門メディア - はじめてのAIをわかりやすく</title>
-    <meta name="description" content="AI初心者向けに、ChatGPTや画像生成AIの使い方をわかりやすく解説するメディアサイトです。">
+    <title>らくらくAI活用ガイド - 初心者のためのやさしいAI診断</title>
+    <meta name="description" content="50代からでも大丈夫。難しい言葉を使わずに、あなたの生活や仕事に役立つAIを30秒で診断します。">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://your-site-url.com/">
-    <meta property="og:title" content="AI入門メディア - はじめてのAIをわかりやすく">
-    <meta property="og:description" content="AI初心者向けに、ChatGPTや画像生成AIの使い方をわかりやすく解説するメディアサイトです。">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200">
+    <meta property="og:title" content="らくらくAI活用ガイド - 初心者のためのやさしいAI診断">
+    <meta property="og:description" content="50代からでも大丈夫。難しい言葉を使わずに、あなたの生活や仕事に役立つAIを30秒で診断します。">
+    <meta property="og:image" content="assets/family_hero.png">
 </head>
 <body>
     <header>
@@ -25,12 +25,11 @@
         <div class="container">
             <nav>
                 <a href="index.html" class="logo">
-                    <span>✨</span> AI入門メディア
+                    <span>🌱</span> らくらくAI活用ガイド
                 </a>
                 <ul class="nav-links">
-                    <li><a href="index.html">ホーム</a></li>
-                    <li><a href="#quiz">AI診断</a></li>
-                    <li><a href="#articles">最新記事</a></li>
+                    <li><a href="index.html">診断をはじめる</a></li>
+                    <li><a href="#articles">AIについて知る</a></li>
                     <li><a href="#glossary">用語集</a></li>
                 </ul>
             </nav>
@@ -38,28 +37,30 @@
     </header>
 
     <main>
-        <section class="hero" style="background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);">
-            <div class="container">
-                <h1>AIで、未来をもっと身近に。</h1>
-                <p>初心者の方でも迷わず始められる、AIツールの活用術を平易な言葉でお届けします。</p>
+            <div class="container text-center">
+                <img src="assets/family_hero.png" alt="家族でAIを楽しむ様子" style="width: 100%; max-width: 600px; border-radius: 2rem; margin-bottom: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <h1 style="margin-bottom: 1.5rem;">50代からの、<br>今日から始めるAI活用ガイド</h1>
+                <p style="opacity: 0.9; max-width: 700px; margin: 0 auto; font-size: 1.3rem;">難しいことは抜きにして、あなたの生活や仕事に役立つ「AI（人工知能）」を、やさしく診断します。</p>
             </div>
-        </section>
 
-        <section class="container" id="quiz">
-            <div class="quiz-section">
+        <section class="container" id="quiz" style="margin-top: -3rem; position: relative; z-index: 10;">
+            <div class="quiz-section" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);">
                 <div id="quizContainer" class="quiz-container">
                     <!-- Quiz will be rendered here by quiz.js on load -->
                 </div>
             </div>
+        </section>
 
-            <div class="search-container" id="articles">
-                <input type="text" id="searchInput" class="search-bar" placeholder="キーワードで記事を検索...">
+        <section class="container" id="articles">
+            <h2 class="text-center" style="margin: 4rem 0 2rem;">AIを学ぶための、わかりやすい読み物</h2>
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-bar" placeholder="気になる言葉を入力してください（例：チャットなど）">
             </div>
 
             <div class="article-grid" id="articleGrid">
                 <!-- 記事カードがここに動的に追加される、または静的に記述 -->
                 <article class="card" data-category="chat">
-                    <img src="assets/chatgpt_thumb.png" alt="ChatGPTの使い方" class="card-img">
+                    <img src="assets/chatgpt_friendly.png" alt="ChatGPTの使い方" class="card-img">
                     <div class="card-content">
                         <span class="category-tag">チャットAI</span>
                         <h2 class="card-title"><a href="articles/chatgpt-basic.html">【保存版】ChatGPTの始め方と基本の使い方ガイド</a></h2>
@@ -68,7 +69,7 @@
                 </article>
 
                 <article class="card" data-category="chat">
-                    <img src="assets/claude_thumb.png" alt="Claude 3.5の使い方" class="card-img">
+                    <img src="assets/claude_friendly.png" alt="Claude 3.5の使い方" class="card-img">
                     <div class="card-content">
                         <span class="category-tag">チャットAI</span>
                         <h2 class="card-title"><a href="articles/claude-basic.html">【最新】Claude 3.5 Sonnetの始め方と特徴を徹底解説</a></h2>
@@ -77,7 +78,7 @@
                 </article>
 
                 <article class="card" data-category="agent">
-                    <img src="assets/antigravity_thumb.png" alt="Antigravityの使い方" class="card-img">
+                    <img src="assets/antigravity_friendly.png" alt="Antigravityの使い方" class="card-img">
                     <div class="card-content">
                         <span class="category-tag">開発アシスタント</span>
                         <h2 class="card-title"><a href="articles/antigravity-guide.html">未来を創るAIアシスタント「Antigravity」とは？</a></h2>
@@ -86,7 +87,7 @@
                 </article>
 
                 <article class="card" data-category="chat">
-                    <img src="assets/claude_thumb.png" alt="Claude vs ChatGPT" class="card-img">
+                    <img src="assets/claude_friendly.png" alt="Claude vs ChatGPT" class="card-img">
                     <div class="card-content">
                         <span class="category-tag">チャットAI</span>
                         <h2 class="card-title"><a href="articles/claude-vs-chatgpt.html">Claude 3.5 vs ChatGPT：2026年最強のAIはどっち？</a></h2>
@@ -95,7 +96,7 @@
                 </article>
 
                 <article class="card" data-category="image">
-                    <img src="assets/midjourney_thumb.png" alt="画像生成AI" class="card-img">
+                    <img src="assets/midjourney_friendly.png" alt="画像生成AI" class="card-img">
                     <div class="card-content">
                         <span class="category-tag">画像生成</span>
                         <h2 class="card-title"><a href="articles/midjourney-guide.html">Midjourneyでプロみたいな絵を描く方法</a></h2>
@@ -104,7 +105,7 @@
                 </article>
 
                 <article class="card" data-category="guide">
-                    <img src="assets/prompt_thumb.png" alt="プロンプトエンジニアリング" class="card-img">
+                    <img src="assets/prompt_friendly.png" alt="プロンプトエンジニアリング" class="card-img">
                     <div class="card-content">
                         <span class="category-tag">入門ガイド</span>
                         <h2 class="card-title"><a href="articles/prompt-engineering-basic.html">【初心者向け】AIを使いこなす「魔法の言葉」プロンプトの基本</a></h2>
@@ -113,7 +114,7 @@
                 </article>
 
                 <article class="card" data-category="legal">
-                    <img src="assets/legal_thumb.png" alt="アフィリエイトについて" class="card-img">
+                    <img src="assets/legal_friendly.png" alt="アフィリエイトについて" class="card-img">
                     <div class="card-content">
                         <span class="category-tag">重要</span>
                         <h2 class="card-title"><a href="affiliate.html">当サイトのアフィリエイト活動について</a></h2>
@@ -124,20 +125,20 @@
         </section>
 
         <section class="container" id="glossary" style="margin-bottom: 6rem;">
-            <div class="card" style="padding: 2.5rem; background: linear-gradient(135deg, var(--card-bg), rgba(99, 102, 241, 0.05));">
-                <h2 style="margin-bottom: 1.5rem;">📚 知っておきたいAI用語集</h2>
+            <div class="card" style="padding: 2.5rem; background: #fff;">
+                <h2 style="margin-bottom: 1.5rem;">📚 むずかしい言葉の解説</h2>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
                     <div>
-                        <h4 style="color:var(--primary)">LLM (大規模言語モデル)</h4>
-                        <p style="font-size: 0.85rem; color: var(--text-muted);">ChatGPTなどのベースになっている、膨大な知識を持つAIの脳のこと。</p>
+                        <h4 style="color:var(--primary)">AI（人工知能）の知識</h4>
+                        <p style="font-size: 0.95rem; color: var(--text-muted);">ChatGPTなどの「脳」にあたる部分です。人間のように言葉を理解してくれます。</p>
                     </div>
                     <div>
-                        <h4 style="color:var(--primary)">プロンプト (Prompt)</h4>
-                        <p style="font-size: 0.85rem; color: var(--text-muted);">AIに与える「指示」や「命令文」のこと。魔法の言葉とも呼ばれます。</p>
+                        <h4 style="color:var(--primary)">上手な頼み方（プロンプト）</h4>
+                        <p style="font-size: 0.95rem; color: var(--text-muted);">AIへのお願いの仕方のことです。コツを掴むと思った通りの答えが返ってきます。</p>
                     </div>
                     <div>
-                        <h4 style="color:var(--primary)">ハルシネーション</h4>
-                        <p style="font-size: 0.85rem; color: var(--text-muted);">AIがもっともらしい「嘘」をつく現象。事実確認が大切です。</p>
+                        <h4 style="color:var(--primary)">もっともらしい嘘</h4>
+                        <p style="font-size: 0.95rem; color: var(--text-muted);">AIが自信満々に間違ったことを言うことがあります。大切な情報は確認が必要です。</p>
                     </div>
                 </div>
             </div>
@@ -147,15 +148,15 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="logo"><span>✨</span> AI入門メディア</div>
+                <div class="logo"><span>🌱</span> らくらくAI活用ガイド</div>
                 <div class="footer-links">
-                    <a href="affiliate.html">アフィリエイトについて</a>
-                    <a href="#">お問い合わせ</a>
+                    <a href="affiliate.html">広告掲載について</a>
+                    <a href="#">サポート</a>
                     <a href="#">プライバシーポリシー</a>
                 </div>
             </div>
-            <p class="text-center mt-2" style="font-size: 0.8rem; color: var(--text-muted);">
-                &copy; 2026 AI入門メディア. All rights reserved.
+            <p class="text-center mt-2" style="font-size: 0.9rem; color: var(--text-muted);">
+                &copy; 2026 らくらくAI活用ガイド. All rights reserved.
             </p>
         </div>
     </footer>
